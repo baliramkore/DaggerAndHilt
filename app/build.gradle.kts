@@ -40,4 +40,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // Retrofit and Gson Converter dependencies
+    //initially we were writing libraries as string but standards
+    // to add dependency into lib recommended
+    // old approach =  implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gsonConverter)
 }
