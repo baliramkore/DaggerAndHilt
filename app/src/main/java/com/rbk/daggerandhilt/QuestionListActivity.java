@@ -40,7 +40,8 @@ public class QuestionListActivity extends AppCompatActivity implements Callback<
             @Override
             public void onQuestionClicked(Question question) {
 
-                //QuestionDetailsActivity.start(QuestionListActivity.this,question.getmId());
+                //sending id to the details Activity
+                QuestionDetailsActivity.start(QuestionListActivity.this,question.getmId());
 
             }
         });
